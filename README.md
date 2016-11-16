@@ -11,6 +11,9 @@
 
 # React Autosuggest
 
+ATTENTION: this is a changed version to use Tab-Key as alternative to Enter-Key
+
+
 ## Demo
 
 Check out the [Homepage](http://react-autosuggest.js.org) and the [Codepen examples](http://codepen.io/collection/DkkYaQ).
