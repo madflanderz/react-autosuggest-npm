@@ -12,6 +12,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _reactRedux = require('react-redux');
 
 var _arrays = require('shallow-equal/arrays');
@@ -515,39 +519,39 @@ var Autosuggest = function (_Component) {
 }(_react.Component);
 
 Autosuggest.propTypes = {
-  suggestions: _react.PropTypes.array.isRequired,
-  onSuggestionsFetchRequested: _react.PropTypes.func.isRequired,
-  onSuggestionsClearRequested: _react.PropTypes.func,
-  onSuggestionSelected: _react.PropTypes.func,
-  renderInputComponent: _react.PropTypes.func,
-  renderSuggestionsContainer: _react.PropTypes.func,
-  getSuggestionValue: _react.PropTypes.func.isRequired,
-  renderSuggestion: _react.PropTypes.func.isRequired,
-  inputProps: _react.PropTypes.object.isRequired,
-  shouldRenderSuggestions: _react.PropTypes.func.isRequired,
-  alwaysRenderSuggestions: _react.PropTypes.bool.isRequired,
-  multiSection: _react.PropTypes.bool.isRequired,
-  renderSectionTitle: _react.PropTypes.func,
-  getSectionSuggestions: _react.PropTypes.func,
-  focusInputOnSuggestionClick: _react.PropTypes.bool.isRequired,
-  focusFirstSuggestion: _react.PropTypes.bool.isRequired,
-  theme: _react.PropTypes.object.isRequired,
-  id: _react.PropTypes.string.isRequired,
-  inputRef: _react.PropTypes.func.isRequired,
+  suggestions: _propTypes2.default.array.isRequired,
+  onSuggestionsFetchRequested: _propTypes2.default.func.isRequired,
+  onSuggestionsClearRequested: _propTypes2.default.func,
+  onSuggestionSelected: _propTypes2.default.func,
+  renderInputComponent: _propTypes2.default.func,
+  renderSuggestionsContainer: _propTypes2.default.func,
+  getSuggestionValue: _propTypes2.default.func.isRequired,
+  renderSuggestion: _propTypes2.default.func.isRequired,
+  inputProps: _propTypes2.default.object.isRequired,
+  shouldRenderSuggestions: _propTypes2.default.func.isRequired,
+  alwaysRenderSuggestions: _propTypes2.default.bool.isRequired,
+  multiSection: _propTypes2.default.bool.isRequired,
+  renderSectionTitle: _propTypes2.default.func,
+  getSectionSuggestions: _propTypes2.default.func,
+  focusInputOnSuggestionClick: _propTypes2.default.bool.isRequired,
+  focusFirstSuggestion: _propTypes2.default.bool.isRequired,
+  theme: _propTypes2.default.object.isRequired,
+  id: _propTypes2.default.string.isRequired,
+  inputRef: _propTypes2.default.func.isRequired,
 
-  isFocused: _react.PropTypes.bool.isRequired,
-  isCollapsed: _react.PropTypes.bool.isRequired,
-  focusedSectionIndex: _react.PropTypes.number,
-  focusedSuggestionIndex: _react.PropTypes.number,
-  valueBeforeUpDown: _react.PropTypes.string,
+  isFocused: _propTypes2.default.bool.isRequired,
+  isCollapsed: _propTypes2.default.bool.isRequired,
+  focusedSectionIndex: _propTypes2.default.number,
+  focusedSuggestionIndex: _propTypes2.default.number,
+  valueBeforeUpDown: _propTypes2.default.string,
 
-  inputFocused: _react.PropTypes.func.isRequired,
-  inputBlurred: _react.PropTypes.func.isRequired,
-  inputChanged: _react.PropTypes.func.isRequired,
-  updateFocusedSuggestion: _react.PropTypes.func.isRequired,
-  resetFocusedSuggestion: _react.PropTypes.func.isRequired,
-  revealSuggestions: _react.PropTypes.func.isRequired,
-  closeSuggestions: _react.PropTypes.func.isRequired
+  inputFocused: _propTypes2.default.func.isRequired,
+  inputBlurred: _propTypes2.default.func.isRequired,
+  inputChanged: _propTypes2.default.func.isRequired,
+  updateFocusedSuggestion: _propTypes2.default.func.isRequired,
+  resetFocusedSuggestion: _propTypes2.default.func.isRequired,
+  revealSuggestions: _propTypes2.default.func.isRequired,
+  closeSuggestions: _propTypes2.default.func.isRequired
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, _redux.actionCreators)(Autosuggest);
